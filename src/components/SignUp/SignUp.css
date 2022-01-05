@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box!important;
+}
+.sign-up{
+    margin-top: 77px;
+}
+.sign-up .logo img{
+    height: 80px;
+}
+.sign-up  form{
+    max-width: 400px;
+    margin: 0 auto;
+}
+.sign-up .form-control{
+    background:var(--color-light);
+    border:none;
+    padding: 10px 5px !important;
+}
+.error{
+    color: var(--color-secondary);
+}
+
+.sign-up .option label{
+    color: var(--color-secondary);
+    cursor: pointer;
+}
+.form-group{
+    margin-bottom: 1rem !important;
+}
+
+.btn-sign{
+    background-color: var(--color-secondary);
+}
