@@ -26,11 +26,7 @@ const Header = () => {
 
                                     (<Link to="/" className="nav-link"><img style={{ borderRadius: '50%', width: 30 }} src={user.photoURL} alt="" /> {user.displayName}</Link>)
                                     :
-                                    <Link to="/login" className="nav-link">
-                                        <button className='btn btn-sign btn-rounded'>
-                                            Login
-                                        </button>
-                                    </Link>
+                                    <Link to="/login" className="nav-link">Login</Link>
                             }
                         </li>
 

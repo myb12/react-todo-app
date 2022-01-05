@@ -93,7 +93,26 @@ const useFirebase = () => {
             .finally(() => setIsLoading(false));
     }
 
-    
+    /*  const saveUser = (email, displayName, method) => {
+         const user = { email, displayName }
+         fetch('https://secret-anchorage-33116.herokuapp.com/users', {
+             method: method,
+             headers: {
+                 'content-type': 'application/json'
+             },
+             body: JSON.stringify(user)
+         })
+             .then(res => res.json())
+             .then(data => { })
+     }
+ 
+     useEffect(() => {
+         fetch(`https://secret-anchorage-33116.herokuapp.com/users/${user.email}`)
+             .then(res => res.json())
+             .then(data => {
+                 setAdmin(data.admin);
+             })
+     }, [user.email]) */
 
     return {
         user,

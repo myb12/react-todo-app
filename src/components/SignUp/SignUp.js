@@ -9,7 +9,7 @@ import './SignUp.css';
 export default function SignUp() {
     const [returnUser, setReturnUser] = useState(false);
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const { registerUser, loginUser } = useAuth();
+    const { registerUser, loginUser, signInWithGoogle } = useAuth();
     const history = useHistory();
     const location = useLocation();
 
@@ -22,6 +22,7 @@ export default function SignUp() {
 
     const handleGoogleSignIn = (e) => {
         e.preventDefault();
+        signInWithGoogle(location, history);
 
     }
 
