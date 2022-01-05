@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+/************Some relevent color variable************/
+:root {
+  --color-primary: #2160fd;
+  --color-primary-light: #5e7dce;
+  --color-secondary: #fe8e22;
+  --color-gradiant-light: #149fff;
+  --color-gradiant-deep: #117aff ;
+  --color-white: #fff;
+  --color-light: #e2e2e2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/************Base styles************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background: linear-gradient(90deg, var(--color-primary-light) 0%, var(--color-primary)100%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-app {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: start;
+  max-width: 520px;
+  min-height: 600px;
+  background: var(--color-secondary);
+  text-align: center;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
 }
 
-.App-link {
-  color: #61dafb;
+.main-heading {
+  margin: 32px 0;
+  text-align: center;
+  color: var(--color-white);
+  font-size: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-input::placeholder {
+  color: var(--color-light);
 }
+
